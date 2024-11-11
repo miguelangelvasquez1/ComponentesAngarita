@@ -1,0 +1,100 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+  }
+  
+  /* Contenedor principal */
+  .trip-info-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contenedor del mapa */
+  .map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Detalles del viaje */
+  .trip-details {
+    margin-bottom: 1.5rem;
+  }
+  
+  .trip-details h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info-item span {
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .info-item p {
+    color: #333;
+  }
+  
+  /* Botones de acción */
+  .trip-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .cancel-button,
+  .contact-button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button {
+    background-color: #e57373;
+    color: #fff;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .contact-button {
+    background-color: #64b5f6;
+    color: #fff;
+  }
+  
+  .contact-button:hover {
+    background-color: #1e88e5;
+  }
+  
