@@ -1,3 +1,5 @@
+
+
 <div class="my-trips-container">
     <h1>Mis Viajes</h1>
     
@@ -6,29 +8,13 @@
       <h2>Historial de Viajes</h2>
   
       <!-- Tarjetas de Viajes -->
-      <div class="trip-card">
-        <p><strong>Destino:</strong> Centro de la ciudad</p>
-        <p><strong>Fecha:</strong> 2024-11-01</p>
-        <p><strong>Conductor:</strong> Juan Pérez</p>
-        <p><strong>Calificación:</strong> 4.8 ⭐</p>
-        <button class="trip-details">Ver Detalles</button>
-      </div>
-  
-      <div class="trip-card">
-        <p><strong>Destino:</strong> Aeropuerto</p>
-        <p><strong>Fecha:</strong> 2024-10-28</p>
-        <p><strong>Conductor:</strong> Luis Gómez</p>
-        <p><strong>Calificación:</strong> 4.7 ⭐</p>
-        <button class="trip-details">Ver Detalles</button>
-      </div>
-  
-      <div class="trip-card">
-        <p><strong>Destino:</strong> Terminal de buses</p>
-        <p><strong>Fecha:</strong> 2024-10-20</p>
-        <p><strong>Conductor:</strong> Ana Martínez</p>
-        <p><strong>Calificación:</strong> 4.9 ⭐</p>
-        <button class="trip-details">Ver Detalles</button>
-      </div>
+      <div class="trip-card" *ngFor="let viaje of viajes">
+        <p><strong>Destino:</strong> {{viaje.destino}}</p>
+        <p><strong>Fecha:</strong> {{viaje.fecha}}</p>
+        <p><strong>Conductor:</strong> {{viaje.conductor}}</p>
+        <p><strong>Calificación:</strong> {{viaje.calificacion}} ⭐</p>
+        <button class="trip-details" [routerLink]="['/info-viaje', viaje.id]">Ver Detalles</button>
+    </div>
     </section>
   
     <!-- Reservar un Nuevo Viaje -->

@@ -13,6 +13,6 @@ export const routes: Routes = [
     {path: "home", component: HomeViewComponent},
     {path: "login", component: LoginViewComponent},
     {path: "register", component: RegisterViewComponent},
-    {path: "info-viaje", component: InfoViajeViewComponent},
+    {path: "info-viaje/:id", component: InfoViajeViewComponent},
     {path: "mis-viajes", component: MisViajesViewComponent}
 ];

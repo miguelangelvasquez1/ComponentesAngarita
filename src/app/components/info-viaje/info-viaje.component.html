@@ -1,7 +1,7 @@
 <div class="trip-info-container">
     <!-- Mapa de ubicación del conductor -->
     <div class="map-container">
-      <img src="/img/mapa-uber.jpg" alt="Mapa del conductor" class="map-image" />
+      <img src={{viaje.imgUrl}} alt="Mapa del conductor" class="map-image" />
     </div>
   
     <!-- Detalles del viaje -->
@@ -10,27 +10,27 @@
   
       <div class="info-item">
         <span>Conductor:</span>
-        <p>Juan Pérez</p>
+        <p>{{viaje.conductor}}</p>
       </div>
   
       <div class="info-item">
         <span>Auto:</span>
-        <p>Toyota Corolla - Gris</p>
+        <p>{{viaje.auto}}</p>
       </div>
   
       <div class="info-item">
         <span>Placa:</span>
-        <p>ABC-1234</p>
+        <p>{{viaje.placa}}</p>
       </div>
   
       <div class="info-item">
-        <span>Tiempo estimado de llegada:</span>
-        <p>5 minutos</p>
+        <span>Tiempo de viaje:</span>
+        <p>{{viaje.tiempo_estimado_de_llegada}}</p>
       </div>
   
       <div class="info-item">
         <span>Destino:</span>
-        <p>Calle 123, Ciudad Ejemplo</p>
+        <p>{{viaje.destino}}</p>
       </div>
     </div>
   
