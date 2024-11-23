@@ -1,0 +1,20 @@
+{
+    "/viajes": {
+      "target": "http://localhost:3000",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    },
+    "/info-viajes": {
+      "target": "http://localhost:3000",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    },
+    "/mensajes": {
+      "target": "http://localhost:3000",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+}
